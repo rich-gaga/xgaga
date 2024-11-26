@@ -67,9 +67,10 @@ router.get('/', async (req, res) => {
 ┊✺┊https://chat.whatsapp.com/JP0tus4T1Hm6gnwuIRmaIW  
 ┊❂╰─────────────*GAGA SESSION*
 ╰──────────────────❂ *OWNER*
+*RICHARD GAGA*
 https://wa.me/254112291443
 
-https://te.me/richardgaga
+https://t.me/richardgaga
 *Powered by Gaga*
   *—————✺✺✺✺—————*
 `
