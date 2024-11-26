@@ -71,8 +71,8 @@ router.get('/', async (req, res) => {
 https://wa.me/254112291443
 
 https://t.me/richardgaga
-*Powered by Gaga*
-  *—————✺✺✺✺—————*
+> Powered by Gaga
+■■■■■■—————✺✺✺✺—————■■■■■■■
 `
  await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id,{text:FLASH_MD_TEXT},{quoted:session})
  
