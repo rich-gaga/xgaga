@@ -58,14 +58,20 @@ router.get('/', async (req, res) => {
 
                let FLASH_MD_TEXT = `
 
+┊❂╭*GAGA SESSION CONNECTED*─❂
+┊✺┊*Follow my channel*
+┊✺┊https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F
+*send this session to your deployer*
+┊✺╰───────────────❂
+┊✺┊ *Join my group for bot updates*
+┊✺┊https://chat.whatsapp.com/JP0tus4T1Hm6gnwuIRmaIW  
+┊❂╰─────────────*GAGA SESSION*
+╰──────────────────❂ *OWNER*
+https://wa.me/254112291443
 
-
-
-❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒
-
-*ANYWAY MD SESSION CONNECTED*
-
-❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒❒
+https://te.me/richardgaga
+*Powered by Gaga*
+  *—————✺✺✺✺—————*
 `
  await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id,{text:FLASH_MD_TEXT},{quoted:session})
  
