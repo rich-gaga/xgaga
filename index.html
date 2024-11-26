@@ -174,11 +174,11 @@
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
       obj.innerText = "COPIED";
-      obj.style = "color:Red;font-weight:bold";
+      obj.style = "color:Orange;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
         obj.innerText = text;
-        obj.style = "color:White;font-weight-bold";
+        obj.style = "color:Black;font-weight-bold";
         obj.size = "5";
       }, 500);
     }
@@ -186,9 +186,9 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="colour:blue;font-weight:bold">Field blank</a><br><br>';
+        a.innerHTML = '<a style="colour:White;font-weight:bold">Field blank</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<a style="color:yellow;font-weight:bold">Invalid Phone Number</a><br><br>';
+        a.innerHTML = '<a style="color:Green;font-weight:bold">Invalid Phone Number</a><br><br>';
       } else {
         const France_King = c.value.replace(/[^0-9]/g, "");
         let bb = "";
@@ -206,8 +206,8 @@
         });
         c.type = "text";
         c.value = "+" + bb;
-        c.style = "color:Blue;font-size:20px";
-        a.innerHTML = '<a style="color:lawngreen;font-weight:bold">Generating pairing code...</a><br><br>';
+        c.style = "color:Red;font-size:20px";
+        a.innerHTML = '<a style="color:Pink;font-weight:bold">Gaga is Generating pairing codes...</a><br><br>';
         let { data } = await axios(`/code?number=${France_King}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:yellow;font-weight:bold" size="3">PAIRING CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
